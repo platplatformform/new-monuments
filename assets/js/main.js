@@ -152,3 +152,8 @@ $("#clear-search").on('click', function() {
     $("#search").keyup();
 });
 
+$(".tag-wrapper").on('touchstart touchend', function(e) {
+    e.preventDefault();
+    $(this).find(".transcription").toggleClass("visible");
+});
+
