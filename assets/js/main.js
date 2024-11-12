@@ -138,13 +138,6 @@ $("#search").on("keyup", function() {
   });
 });
 
-$(".tag-wrapper").hover(
-  function() {
-    $(this).addClass("hovered");
-  }, function() {
-    $(this).removeClass("hovered");
-  }
-);
 
 $("#clear-search").on('click', function() {
     console.log('cleared');
@@ -152,8 +145,12 @@ $("#clear-search").on('click', function() {
     $("#search").keyup();
 });
 
-$(".tag-wrapper").on('touchstart touchend', function(e) {
-    e.preventDefault();
-    $(this).find(".transcription").toggleClass("visible");
+$( document ).ready(function() {
+
+    $(".tag-wrapper").on('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).find(".transcription").toggleClass("visible");
+    });
+    
 });
 
