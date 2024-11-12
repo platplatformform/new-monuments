@@ -156,7 +156,7 @@ hr#spacer {
   right: 0;
   bottom: 0;
   min-width: 100vw; 
-  min-height: 120vh;
+  min-height: 100vh;
   max-width: 160vw;
   max-height: 150vh;
   z-index: -1;
@@ -166,7 +166,7 @@ hr#spacer {
 @media (max-aspect-ratio: 1/1) {
 
 #intro-video {
-  max-width: 300vw;
+  max-width: 350vw;
 }
 
 }
