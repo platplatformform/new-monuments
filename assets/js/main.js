@@ -148,9 +148,8 @@ $("#clear-search").on('click', function() {
 $( document ).ready(function() {
 
     $(".tag-wrapper").on('touchstart touchend', function(e) {
-        e.preventDefault();
         $(this).find(".transcription").toggleClass("visible");
     });
-    
+
 });
 
