@@ -133,6 +133,7 @@ hr#spacer {
 #intro-background {
 	width: 100vw;
 	height: calc(100vh + 1px);
+	height: calc(100dvh + 1px);  /* for ios */
 	border-bottom: 1px solid #FFFFFF;
 	z-index: -1;
 }
@@ -165,8 +166,10 @@ hr#spacer {
   bottom: 0;
   min-width: 100vw; 
   min-height: 100vh;
+  min-height: 100dvh; /* for ios */
   max-width: 160vw;
   max-height: 150vh;
+  max-height: 150dvh; /* for ios */
   z-index: -1;
   filter: grayscale(100%) brightness(0.45);
 }
@@ -183,6 +186,7 @@ hr#spacer {
 
 #intro-video {
 	max-height: 400vh;
+	max-height: 400dvh; /* for ios */
 }
 
 }
@@ -301,6 +305,7 @@ hr#spacer {
 	width: 25em;
 	margin: 0 auto;
 	margin-bottom: 8em;
+	color: red;
 }
 
 #tag-grid {
